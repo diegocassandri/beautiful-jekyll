@@ -1,10 +1,14 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Sobre
+subtitle: Sobre mim
 ---
 
-Meu Nome é Diego Cassandri e abaixo alguns dos meus principais interesses:
+- **Nome:** Diego Cassandri
+- **Cidade:** Umuarama - PR
+- **Trabalho:** Senior Sistemas
+
+**Interesses atuais:**
 
 - Desenvovlimento Web
 - Frontend 
@@ -13,5 +17,5 @@ Meu Nome é Diego Cassandri e abaixo alguns dos meus principais interesses:
 - DevOps
 
 
-### Obrigado!
+
 
