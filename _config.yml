@@ -23,13 +23,13 @@ description: Blog pessoal!
 
 # List of links in the navigation bar
 navbar-links:
-  Sobre mim: "aboutme"
+  Sobre: "aboutme"
   #Resources:
   #  - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #  - Learn markdown: "http://www.markdowntutorial.com/"
   #  - GitHub Pages: "https://pages.github.com/"
   #Author's home: "http://deanattali.com"
-nav-search: "pesquisa"
+Pesquisar: "pesquisa"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -51,7 +51,7 @@ author:
   twitter: yourname   # eg. daattali
   reddit: yourname    # eg. daattali
   google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
-  linkedin: murillogoulart  # eg. daattali
+  linkedin: diegocassandri  # eg. daattali
   xing: yourname      # eg. daattali
   stackoverflow: yourlink  # eg. "3943160/daattali"
   snapchat: yourname  # eg. daattali
@@ -62,8 +62,8 @@ author:
 
 # Select which links to show in the footer
 footer-links-active:
-  rss: true
-  facebook: true
+  rss: false
+  facebook: false
   email: true
   twitter: false
   google-plus: false
@@ -80,7 +80,7 @@ footer-links-active:
 
 # Select which share links to show in posts
 share-links-active:
-  twitter: true
+  twitter: false
   facebook: true
   google: false
   linkedin: true
