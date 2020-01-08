@@ -5,13 +5,15 @@ subtitle: Sobre mim
 ---
 
 - **Nome:** Diego Cassandri
-- **Cidade:** Umuarama - PR
+- **Cidade:** Blumenau - SC
 - **Trabalho:** Senior Sistemas
 
 **Interesses atuais:**
 
-- Desenvovlimento Web
-- Frontend 
+- Desenvovlimento Full Stack
+- NodeJs
+- AWS
+- Serverless
 - Java
 - Docker
 - DevOps
