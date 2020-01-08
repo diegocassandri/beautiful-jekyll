@@ -23,6 +23,7 @@ description: Blog relacionado a assuntos de tecnologia em geral
 
 # List of links in the navigation bar
 navbar-links:
+  Notes: https://cassandri-notes.netlify.com/
   Sobre: "aboutme"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
