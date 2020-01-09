@@ -26,10 +26,10 @@ navbar-links:
   Notes App: "https://notes.diegocassandri.com"
   Sobre: "aboutme"
 nav-search: "pesquisa"
-  #Resources:
-  #  - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-  #  - Learn markdown: "http://www.markdowntutorial.com/"
-  #  - GitHub Pages: "https://pages.github.com/"
+Informações:
+    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
+    - Learn markdown: "http://www.markdowntutorial.com/"
+    - GitHub Pages: "https://pages.github.com/"
   #Author's home: "http://deanattali.com"
 
 
