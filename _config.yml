@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://diegocassandri.github.io"
+url: "http://www.diegocassandri.com/"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -23,13 +23,15 @@ description: Blog relacionado a assuntos de tecnologia em geral.
 
 # List of links in the navigation bar
 navbar-links:
+  Notes App: https://cassandri-notes.netlify.com/
   Sobre: "aboutme"
+nav-search: "pesquisa"
   #Resources:
   #  - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #  - Learn markdown: "http://www.markdowntutorial.com/"
   #  - GitHub Pages: "https://pages.github.com/"
   #Author's home: "http://deanattali.com"
-nav-search: "pesquisa"
+
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -37,7 +39,7 @@ avatar: "/img/avatar-icon.jpg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-# title-img: /path/to/image
+#title-img: "/cloud.jpg"
 
 # --- Footer options --- #
 
@@ -51,14 +53,14 @@ author:
   twitter: diegocassandri   # eg. daattali
   reddit: yourname    # eg. daattali
   google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
-  linkedin: diegocassandri  # eg. daattali
+  linkedin: diego-cassandri  # eg. daattali
   xing: yourname      # eg. daattali
   stackoverflow: yourlink  # eg. "3943160/daattali"
   snapchat: yourname  # eg. daattali
   instagram: yourname # eg. daattali
   youtube: yourlink   # eg. user/daattali or channel/daattali
   spotify: yourname   # eg. daattali
-  telephone: +55 44 99114-2877   # eg. +14159998888
+  telephone: +55 47 988567168   # eg. +14159998888
 
 # Select which links to show in the footer
 footer-links-active:
@@ -80,14 +82,14 @@ footer-links-active:
 
 # Select which share links to show in posts
 share-links-active:
-  twitter: false
+  twitter: true
   facebook: true
-  google: false
+  google: true
   linkedin: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-#url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "diegocassandri.com"  
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
