@@ -23,7 +23,7 @@ description: Blog relacionado a assuntos de tecnologia em geral.
 
 # List of links in the navigation bar
 navbar-links:
-  Notes App: https://cassandri-notes.netlify.com/
+  Notes App: "https://notes.diegocassandri.com"
   Sobre: "aboutme"
 nav-search: "pesquisa"
   #Resources:
