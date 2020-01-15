@@ -4,61 +4,42 @@ title: Guia de customizações SDK Senior X
 subtitle: Guia de customizações SDK Senior X
 ---
 
-## Guia de customizações SDK Senior X
-
-## Sumário
-
-### GUIA DE REFERÊNCIA ................................................................................................................................................................. 1
-
-### 1. SDK DE CUSTOMIZAÇÕES NO SENIOR X ............................................................................................................................. 2
-
-### 2. CONCEITOS ........................................................................................................................................................................ 2
-
-### 3. VANTAGENS ....................................................................................................................................................................... 2
-
-### 4. UTILIZAÇÃO ........................................................................................................................................................................ 2
-
-### 4.1. PRÉ-REQUISITOS ..................................................................................................................................................................... 2
-
-### 4.2. CONFIGURANDO O AMBIENTE DE CUSTOMIZAÇÃO ......................................................................................................................... 4
-
-### 4.3. PERMISSÕES DE ACESSO AO AMBIENTE ....................................................................................................................................... 8
-
-### 4.4. CRIANDO UMA NOVA CUSTOMIZAÇÃO ........................................................................................................................................ 9
-
-```
-4.4.1. Cenário ...................................................................................................................................................................... 9
-4.4.2. Identificando a primitiva ......................................................................................................................................... 10
-4.4.3. Criando a customização .......................................................................................................................................... 11
-4.5. CODIFICANDO A CUSTOMIZAÇÃO ............................................................................................................................................. 14
-```
-**5. TÓPICOS GERAIS .............................................................................................................................................................. 19**
-
-```
-5.1. DEPURANDO UMA FUNÇÃO CUSTOMIZADA ................................................................................................................................ 19
-5.2. UTILIZANDO BIBLIOTECAS DE TERCEIROS .................................................................................................................................... 22
-```
-**6. TÓPICOS ADICIONAIS ....................................................................................................................................................... 26**
-
-```
-6.1. UTILIZANDO A BIBLIOTECA FAB-LAMBDA-LIB ......................................................................................................................... 26
-```
-**7. DICAS E BOAS PRÁTICAS .................................................................................................................................................. 30**
-
-```
-7.1. VERSIONAMENTO DE CÓDIGO ................................................................................................................................................. 30
-7.2. MAIS SOBRE AWS LAMBDA E NODEJS ..................................................................................................................................... 31
-```
-**8. FONTES ............................................................................................................................................................................ 31**
-
-## 1. SDK de customizações no Senior X
+## Guia de customizações utilizando o SDK de desevolvimento do Senior X Platform
 
 O SDK da Plataforma Senior X, é um Kit de desenvolvimento que fornece um ambiente de customização de regras de
 negócios da Plataforma através da interceptação de primitivas (Endpoints) , possibilitando a implementações de regras
 de negócios customizadas.
 
 O SDK utiliza como base a criação de funções Lambdas no provedor de Cloud AWS e edição do código fonte através
-da IDE Cloud9.
+da IDE Cloud9.(https://aws.amazon.com/pt/cloud9/)
 
 A linguagem adotada como padrão de desenvolvimento utilizando o SDK é Javascript, rodando na plataforma Nodejs.
 
+## Conceitos
+
+Abaixo estão alguns conceitos importantes para a compreensão do funcionamento do SDK e das customizações na Plataforma Senior X. 
+ 
+- AWS lambda:O AWS Lambda permite que você execute códigos sem provisionar ou gerenciar servidores. Ou seja, seu código é implantado em um formato de função que é executada através de gatilho de outros serviços da própria AWS. Isso garante que o desenvolvedor foca apenas na regra de negócio do software, sem se preocupar com a infraestrutura de servidores. 
+ 
+- Cloud9: É um ambiente de desenvolvimento integrador totalmente na nuvem, com suporte a várias plataformas e linguagens de programação. Esse é o editor padrão para o desenvolvimento de funções lambda na AWS. 
+ 
+- NodeJs: É um interpretador de Javascript que roda do server-side (servidor). 
+
+## Vantagens
+
+- Possibilita o desenvolvimento de customizações sem a necessidade de instalações locais. 
+
+- As customizações são feitas em uma linguagem de marcado altamente poderosa e com uma grande comunidade global. 
+
+- Criação de customizações “Endpoints” de forma rápida. 
+
+- Cliente gerencia o acesso de quem pode editar suas customizações. 
+
+- Possibilidade de utilizar bibliotecas de terceiros para ganhar produtividade no desenvolvimento
+
+## Utilização
+
+- Possuir um tenant para acesso a plataforma Senior X, com um usuário com permissões de Administrador. 
+  
+- Validar se o tenant do cliente está devidamente configurado para realizar o envio de e-mails: 
+   Através do menu: Tecnologia / Configuração / Por Tenant / Aba Sistema: Validar se as configurações de envio de email estão preenchidas: 
