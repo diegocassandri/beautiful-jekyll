@@ -4,7 +4,7 @@ title: Guia de customizações SDK Senior X
 subtitle: Guia de customizações SDK Senior X
 ---
 
-## Guia de customizações utilizando o SDK de desevolvimento do Senior X Platform
+# Guia de customizações utilizando o SDK de desevolvimento do Senior X Platform <!-- omit in toc -->
 
 O SDK da Plataforma Senior X, é um Kit de desenvolvimento que fornece um ambiente de customização de regras de
 negócios da Plataforma através da interceptação de primitivas (Endpoints) , possibilitando a implementações de regras
