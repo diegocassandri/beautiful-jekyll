@@ -66,13 +66,13 @@ hr.small {
 }
 
 ::-moz-selection {
-  color: wgray;
-  text-shadow: none;
+  color: gray;
+  text-shadow: gainsboro;
   background-color: {{ site.hover-col }};
 }
 ::selection {
   color: gray;
-  text-shadow: none;
+  text-shadow: gainsboro;
   background-color: {{ site.hover-col }};
 }
 img::selection {
