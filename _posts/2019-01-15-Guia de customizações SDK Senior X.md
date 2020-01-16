@@ -19,11 +19,11 @@ A linguagem adotada como padrão de desenvolvimento utilizando o SDK é Javascri
 
 Abaixo estão alguns conceitos importantes para a compreensão do funcionamento do SDK e das customizações na Plataforma Senior X. 
  
-- AWS lambda:O AWS Lambda permite que você execute códigos sem provisionar ou gerenciar servidores. Ou seja, seu código é implantado em um formato de função que é executada através de gatilho de outros serviços da própria AWS. Isso garante que o desenvolvedor foca apenas na regra de negócio do software, sem se preocupar com a infraestrutura de servidores. 
+- `AWS lambda:` O AWS Lambda permite que você execute códigos sem provisionar ou gerenciar servidores. Ou seja, seu código é implantado em um formato de função que é executada através de gatilho de outros serviços da própria AWS. Isso garante que o desenvolvedor foca apenas na regra de negócio do software, sem se preocupar com a infraestrutura de servidores. 
  
-- Cloud9: É um ambiente de desenvolvimento integrador totalmente na nuvem, com suporte a várias plataformas e linguagens de programação. Esse é o editor padrão para o desenvolvimento de funções lambda na AWS. 
+- `Cloud9:` É um ambiente de desenvolvimento integrador totalmente na nuvem, com suporte a várias plataformas e linguagens de programação. Esse é o editor padrão para o desenvolvimento de funções lambda na AWS. 
  
-- NodeJs: É um interpretador de Javascript que roda do server-side (servidor). 
+- `NodeJs:` É um interpretador de Javascript que roda do server-side (servidor). 
 
 ## Vantagens
 
@@ -43,3 +43,9 @@ Abaixo estão alguns conceitos importantes para a compreensão do funcionamento 
   
 - Validar se o tenant do cliente está devidamente configurado para realizar o envio de e-mails: 
    Através do menu: Tecnologia / Configuração / Por Tenant / Aba Sistema: Validar se as configurações de envio de email estão preenchidas: 
+
+![Confoguração de envio de e-mail](/.docs/images/emailconfig.png "Confoguração de envio de e-mail")
+
+
+
+
