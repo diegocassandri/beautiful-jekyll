@@ -523,7 +523,7 @@ Agora podemos salvar, fazer o deploy da função e realizar o teste cadastrando 
  
 Ao criar um novo usuário já podemos ver o resultado: 
 
-![Cloud9](/img/test3.png "Cloud9")
+![Cloud9](/img/teste3.png "Cloud9")
 
 Obs.: Lembrar de ativar a passagem do token da plataforma na chamada da customização em: Tecnologia / Customização / Regras / Funcionalidades (API), editando a customização criada e marcar a opção Token como abaixo: 
 
