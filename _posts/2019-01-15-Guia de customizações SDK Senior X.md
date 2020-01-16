@@ -59,3 +59,16 @@ Caso o e-mail for executado com sucesso e recebido pelo destinatário, as config
 Para configurar um ambiente de customização, será necessário navegar até a tela de gerenciamento de acesso, que fica em Tecnologia>Customizações>Configurar Ambiente>Gerenciar Acesso: 
 
 ![Configuração do ambiente](/_posts/.docs/images/amb1.png "Configuração do ambiente")
+
+Nesta tela você pode visualizar o status de configuração do ambiente e informar chaves do provedor cloud. (Atualmente apenas a AWS é suportada). 
+
+**Configurando chaves de acesso** 
+
+Para que seja possível configurar o ambiente é necessário garantir que as chaves de acesso ao provedor cloud já estejam devidamente configuradas, por padrão o serviço utiliza as chaves já informadas nas configurações globais, no entanto, existe a possibilidade de sobrescrever as chaves de acesso de duas maneiras diferentes: 
+
+**Através do gerenciamento de acesso** 
+
+Basta clicar no botão Informar chaves de acesso, e será exibido o formulário contendo o identificador da conta e a região já preenchidos.
+
+![Configuração do ambiente](/img/hello_world.jpeg "Configuração do ambiente")
+
