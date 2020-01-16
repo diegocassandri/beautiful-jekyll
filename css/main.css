@@ -75,6 +75,7 @@ hr.small {
   text-shadow: gray;
   background-color: {{ site.hover-col }};
 }
+
 img::selection {
   color: gray;
   background: transparent;
