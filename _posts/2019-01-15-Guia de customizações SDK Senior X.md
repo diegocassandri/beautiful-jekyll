@@ -188,4 +188,177 @@ Localizar no resultado a primitiva de acordo com Domínio/Serviço/Primitiva a s
 
 Na próxima tela devemos selecionar algumas opções: 
 
-![Cadastro extensão](/img/funcionalidade.png "Cadastro extensão")
+![Cadastro funcionalidade](/img/funcionalidade.png "Cadastro funcionalidade")
+
+
+**Primitiva:** Preenchido automaticamente 
+ 
+**Protocolo:** REST ou SOAP: Por padrão as customizações utilizando o SDK utilizando o protocolo REST. 
+ 
+**Método:** Nesse caso selecionar a opção **“Antes”**, visto que vamos realizar uma validação para bloquear a operação e não permitir que o usuário seja salvo caso uma determinada informação não for preenchida. Além desse método existem o método **“Depois”** que realiza a chamada da customização depois da execução da primitiva nativa e o método **“Interceptar”**, onde quem está customizando assume o total controle da execução. 
+ 
+**Histórico:** Selecionar a opção “Todas as Chamadas” para que a plataforma guarde o log das execuções, para futuras consultas.  
+ 
+**URL:** Informar a URL onde o nosso serviço customizado está hospedado. No caso da utilização do SDK o mesmo provê a criação de uma função lambda no provedor cloud e acesso automaticamente o endpoint customizado nesse campo.
+
+Basta clicar no botão ![botão](/img/botao.png ).
+
+Será apresentada uma mensagem questionando o nome da função a ser criada. Por padrão o nome é carregado automaticamente: 
+
+![Gerar Url](/img/geraurl.png "Gerar Url")
+
+Clicar em “Sim.” Obs.: Esse processo pode demorar alguns segundos. 
+ 
+Após a criação da função podemos ver o resultado no campo URL:
+
+![Cadastro funcionalidade](/img/func2.png "Cadastro funcionalidade")
+
+Clicando em avançar vamos explorar mais algumas opções: 
+
+![Cadastro funcionalidade](/img/func3.png "Cadastro funcionalidade")
+
+**Cabeçalho Padrão:** Define as informações que a customização vai receber no “Header” da requisição HTTP. Por padrão as opções (Tenant, User e Timeout) são enviadas. Porém também é possível enviar o Token da plataforma, nos casos em que a customização a ser desenvolvida precise realizar requisições a outras primitivas da plataforma ou APIS de terceiros para realização de busca de informações ou integração de dados. Vamos ver isso mais a frente. 
+ 
+**Cabeçalho Customizado:** Define valores customizados que podem enviar no “Header” da requisição e que a customização pode ter acesso. 
+ 
+**Tags:** São identificadores que podem ser usados para realizar agrupamento de customizações por assuntos.
+
+**Usuário:** Podemos informar usuários nesse campo para restringir que determinada customização só seja executada para um usuário específico. Esse recurso é muito útil quando estamos desenvolvendo uma customização e não queremos impactar no processo do usuário final. 
+ 
+Clicar no botão “Salvar” da tela para concluir o cadastro da customização. 
+ 
+A seguinte mensagem aparecerá na tela informando sucesso na operação. Clicar “Copiar para clipboard ” e abrir ambiente. 
+
+
+![Operação](/img/operation.png "Operação")
+ 
+
+## Codificando a customização
+
+Após copiar para a área de transferência e abrir o ambiente de acordo com o último passo.  No terminar do Cloud9 colar o comando copiado e dar um “Enter”.
+
+![Cloud9](/img/cloud92.png "Cloud9")
+
+O comando em questão baixa no cloud9 um arquivo .zip contendo o código fonte inicial da função lambda e descompacta o mesmo dentro da pasta do environment. 
+ 
+Dentro da pasta da função criado existe o arquivo index.js que define o corpo da nossa função customizada: 
+
+Agora que entendemos o corpo padrão de uma função customizada, podemos implementar nossa validação.      Através do developerTools do navegador conseguimos buscar o payload que a tela envia para a nossa customização: 
+Perceba que a função é criada com comentário padrões para auxiliar o desenvolvedor. 
+
+
+A função lambda é composta de um método principal **handler**  que é uma função assíncrona por padrão. Recebe como parâmetro um **event**  que é o corpo em JSON da requisição http recebida pela customização através da chamada da plataforma. Ou seja, através desse atributo temos acesso ao payload que a primitiva nativa produto irá receber.    
+
+No nosso caso teremos o payload contendo os dados necessário que a primitiva **createUser** necessita para criar um novo usuário na plataforma.  
+
+Como retorno possuímos uma variável chamada **response**, que devolve para a primitiva nativa um corpo de uma requisição HTTP, contendo o **statusCode** HTTP, o Content-Type no **header** e o corpo no atributo **body**. 
+
+Agora que entendemos o corpo padrão de uma função customizada, podemos implementar nossa validação.     
+ 
+Através do developerTools do navegador conseguimos buscar o payload que a tela envia para a nossa customização: 
+
+Agora que entendemos o corpo padrão de uma função customizada, podemos implementar nossa validação. Através do developerTools do navegador conseguimos buscar o payload que a tela envia para a nossa customização: 
+
+![Cloud9](/img/payload.png "Cloud9")
+
+Clicando me “View source” podemos ver no formato JSON:
+
+```json
+{   
+   "username":"testecustom",
+   "fullName":"testecustom",        
+   "email":"testecustom@senior.com.br",        
+   "password":"123456",      
+   "blocked":false,       
+   "changePassword":false,       
+   "properties":[] 
+}
+```
+
+Perceba que nesse payload não existe o atributo **“description”** que seria a descrição do nosso usuário. Dessa forma podemos usar o mesmo para realizar a nossa validação. Ou seja, quando o atributo description não existir no corpo enviaremos uma mensagem de erro para o usuário, caso existir o fluxo padrão será seguido e o usuário será cadastrado.  A customização ficará da seguinte forma: 
+
+
+```js
+/**
+ * Nome da primitiva : createUser
+ * Nome do dominio : platform
+ * Nome do serviço : user
+ * Nome do tenant : fabcustom
+ **/
+
+exports.handler = async (event) => {
+  
+    //Define variável para recebermos o corpo da requisição
+    let body;
+    
+    
+    //Atribui na variável o corpo da requisição fazendo o Parse para JSON caso o event possuir a propriedade body. Isso é necessário para os testes que veremos a seguir.
+    if(event.body === undefined) {
+        body = event;
+    } else {
+        body = JSON.parse(event.body);
+    }
+    
+    
+    //Valida se no corpo existe a propriedade description, caso positivo devolve com status 200 OK o prórpio corpo,
+    //Caso negativo devolve o status 400 - bad Request com a mensagem para o usuário
+    if(body.hasOwnProperty('description')){
+       return sendRes(200, body);
+    } else {
+      return sendRes(400, 'Preencher o campo descrição!');
+    }
+  
+    
+};
+
+const sendRes = (status, body) => {
+
+  var response = {
+    statusCode: status,
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(body)
+  };
+  return response;
+};
+```
+
+Para testar acessar no canto direito do cloud9 a opção AWS Resources, localizar nossa função e clicar no botão deploy: 
+
+![Cloud9](/img/deploy.png "Cloud9")
+
+No canto superior da tela a seguinte mensagem deve ser apresentada: **Function deployment complete**
+
+Agora já podemos testar nossa customização, porém antes devemos nos certificar que a mesma está ativa, através do caminho: Tecnologia / customização / Regras / Funcionalidades API 
+
+![Cloud9](/img/habilita.png "Cloud9")
+
+Essa tela mostra todas as customizações cadastras, com a informações de quais estão ativas e Inativas. 
+ 
+Ativar a customização e acessar a tela de criação de usuário para testar a customização.  
+ 
+Menu: Tecnologia / Administração / Gestão de Usuários, botão “Adicionar”. 
+ 
+Cadastrando um usuário sem informar o campo descrição teremos o seguinte resultado: 
+
+![Cloud9](/img/teste.png "Cloud9")
+
+Preenchendo o campo descrição o usuário é cadastrado normalmente: 
+
+![Cloud9](/img/sucesso.png "Cloud9")
+
+Ao acessar o cadastro de regra no botão detalhes da nossa função podemos ver várias informações sobre as chamadas que essa customização já recebeu. 
+
+![Cloud9](/img/detalhes.png "Cloud9")
+
+Inclusive podemos visualizar por chamada qual foi o input e o output: 
+
+![Cloud9](/img/teste2.png "Cloud9")
+
+Com isso finalizamos o desenvolvimento da customização. 
+ 
+O código fonte dessa customização pode ser encontrado no seguinte endereço:  
+
+(https://github.com/diegocassandri/tutorial-customizacoes-sdk/blob/master/2oRcurVwM6Wk-platform-usercreateUser/index1.js)
+
