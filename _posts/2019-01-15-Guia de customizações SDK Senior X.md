@@ -185,3 +185,7 @@ Para criar a customização acesso o seguinte menu: Tecnologia / Customização 
 Localizar no resultado a primitiva de acordo com Domínio/Serviço/Primitiva a ser customizada através do botão “Selecionar”. 
 
 ![Cadastro extensão](/img/extensao.png "Cadastro extensão")
+
+Na próxima tela devemos selecionar algumas opções: 
+
+![Cadastro extensão](/img/funcionalidade.png "Cadastro extensão")
