@@ -68,12 +68,12 @@ hr.small {
 ::-moz-selection {
   color: black;
   text-shadow: gray;
-  background-color: {{ site.hover-col }};
+  background-color: /*{{ site.hover-col }}*/ gray;
 }
 ::selection {
   color: black;
   text-shadow: gray;
-  background-color: {{ site.hover-col }};
+  background-color: /*{{ site.hover-col }}*/ gray;
 }
 
 img::selection {
