@@ -44,8 +44,18 @@ Abaixo estão alguns conceitos importantes para a compreensão do funcionamento 
 - Validar se o tenant do cliente está devidamente configurado para realizar o envio de e-mails: 
    Através do menu: Tecnologia / Configuração / Por Tenant / Aba Sistema: Validar se as configurações de envio de email estão preenchidas: 
 
-![Confoguração de envio de e-mail](/.docs/images/emailconfig.png "Confoguração de envio de e-mail")
+![Configuração de envio de e-mail](/_posts/.docs/images/emailconfig.png "Configuração de envio de e-mail")
 
+Obs.: Certificar-se que as configurações estão corretas é primordial para seguir com os exemplos desse documento. 
+ 
+Através do menu: Tecnologia / Configurações / Validação de envio de E-mail: Realizar um teste de envio para um determinado e-mail e verificar se o mesmo é recebido: 
 
+![Validação de envio de e-mail](/_posts/.docs/images/validacaoemail.png "Validação de envio de e-mail")
 
+Caso o e-mail for executado com sucesso e recebido pelo destinatário, as configurações estão corretas. 
 
+## Configurando o ambiente de customização 
+
+Para configurar um ambiente de customização, será necessário navegar até a tela de gerenciamento de acesso, que fica em Tecnologia>Customizações>Configurar Ambiente>Gerenciar Acesso: 
+
+![Configuração do ambiente](/_posts/.docs/images/amb1.png "Configuração do ambiente")
