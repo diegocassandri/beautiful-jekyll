@@ -3,7 +3,6 @@ layout: default
 title: "Busca diegocassandri.github.io"
 css: "/css/search.css"
 ---
-
 ### Busca do Google no blog
 <div id="google-custom-search">
 <script>
