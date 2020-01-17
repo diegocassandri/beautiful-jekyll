@@ -7,7 +7,7 @@ css: "/css/search.css"
 <div id="google-custom-search">
 <script>
   (function() {
-    var cx = '008527473289615614667:fd5ogoejb4u';
+    var cx = '017642871977066725036:p1ib2bbqpdm';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
@@ -17,4 +17,5 @@ css: "/css/search.css"
   })();
 </script>
 <gcse:search></gcse:search></div>
- 
+
+
