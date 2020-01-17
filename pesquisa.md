@@ -17,8 +17,6 @@ css: "/css/search.css"
   })();
 </script>
 
-<script async src="https://cse.google.com/cse.js?cx=017642871977066725036:p1ib2bbqpdm"></script>
-<div class="gcse-search"></div>
 
 <gcse:search></gcse:search></div>
 
