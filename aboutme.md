@@ -1,22 +1,27 @@
 ---
 layout: page
 title: Sobre
-subtitle: Sobre mim
 ---
 
 - **Nome:** Diego Cassandri
+- **Ocupação** Analista de Sistemas - Team Leader
 - **Cidade:** Blumenau - SC
 - **Trabalho:** Senior Sistemas
 
-**Interesses atuais:**
+Amante da tecnologia, sempre antenado em novas tendências e novas formas de fazer.
+
+**Interesses gerais:**
 
 - Desenvovlimento Full Stack
+- Senior X Platform
 - NodeJs
 - AWS
 - Serverless
 - Java
 - Docker
 - DevOps
+- Desenvolvimento Ágil
+- TDD, BDD
 
 
 
