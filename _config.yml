@@ -23,13 +23,11 @@ description: Blog relacionado a assuntos de tecnologia em geral.
 
 # List of links in the navigation bar
 navbar-links:
-  Portifólio: 
-    - TakeNote: "https://takenote.diegocassandri.com"  
-    - Notes App: "https://notes.diegocassandri.com"
+  Portifólio: "portifolio" 
+  TakeNote: "https://takenote.diegocassandri.com"  
+  Notes App: "https://notes.diegocassandri.com"
   Sobre: "aboutme"
-  Resources:
-    Beautiful Jekyll: "https://beautifuljekyll.com"
-    Learn markdown: "https://www.markdowntutorial.com/"
+  
 #Informações:
 #  Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #  Learn markdown: "http://www.markdowntutorial.com/"
