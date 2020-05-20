@@ -2,6 +2,8 @@
 layout: post
 title: Guia de customizações SDK Senior X
 subtitle: Guia de customizações SDK Senior X
+bigimg:
+    - "/img/customization.png" : ""
 ---
 
 # Guia de customizações utilizando o SDK de desevolvimento do Senior X Platform <!-- omit in toc -->

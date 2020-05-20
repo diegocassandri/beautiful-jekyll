@@ -2,7 +2,7 @@
 layout: page
 title: Portifólio
 bigimg:
-    - "/img/cloud.jpg" : "Aventure-se na nuvem!"
+    - "/img/path.jpg" : "Aventure-se na nuvem!"
 ---
 
 
