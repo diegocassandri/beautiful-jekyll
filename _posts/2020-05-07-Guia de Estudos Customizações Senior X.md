@@ -1,3 +1,11 @@
+---
+layout: post
+title: Guia de Estudos - Customizações Senior X
+subtitle: Guia de Estudos - Customizações Senior X
+bigimg:
+    - "/img/OIP.jpg" : ""
+---
+
 # Guia de Estudos - Customizações Senior X
 
 Esse guia tem como objetivo ser uma consolidado de referências para estudos relacionados a customizações na Plataforma Senior X. O mesmo visa guiar desde os conhecimentos básicos das linguagens de programação como Também das principais tecnologias utilizadas para customização no Senior X. 
