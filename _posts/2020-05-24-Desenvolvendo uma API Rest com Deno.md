@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Desenvolvendo uma API Rest com Deno
+subtitle: Desenvolvendo uma API Rest com Deno
 bigimg:
     - "/img/Deno.jpeg" : ""
 ---
