@@ -1,3 +1,10 @@
+---
+layout: post
+title: Desenvolvendo uma API Rest com Deno
+bigimg:
+    - "/img/Deno.jpeg" : ""
+---
+
 # Desenvolvendo uma API Rest com Deno
 
 ![API%20REST%20com%20Deno%204d3e5bdb1b304b71af7c1a4a2c590116/Deno.jpeg](APIDENO/Deno.jpeg)
