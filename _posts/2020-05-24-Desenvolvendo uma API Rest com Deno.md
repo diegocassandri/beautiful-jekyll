@@ -337,11 +337,12 @@ const updateProduct = async({ params, request, response }: { params: { id: strin
 
 > Testando no Postman
 
-![https://miro.medium.com/max/1067/1*N8F0RbJn-cxWQEv5_OmlKw.png](https://miro.medium.com/max/1067/1*N8F0RbJn-cxWQEv5_OmlKw.png)
+
+![PUT](/img/APIDENO/PUT.png)
 
 Dados para atualizar o nome do Produto
 
-![https://miro.medium.com/max/1069/1*aWXknoDXiCHxtsozrJSlTA.png](https://miro.medium.com/max/1069/1*aWXknoDXiCHxtsozrJSlTA.png)
+![PUTRESPONSE](/img/APIDENO/PUTRESPONSE.png)
 
 Nome do produto Id: 2 atualizado.
 
@@ -359,7 +360,7 @@ const deleteProduct = ({ params, response }: { params: { id: string }, response:
 
 > Testando no Postman
 
-![https://miro.medium.com/max/1073/1*75qMSJhGU4nJUl2Mr3wV5Q.png](https://miro.medium.com/max/1073/1*75qMSJhGU4nJUl2Mr3wV5Q.png)
+![DELETE](/img/APIDENO/DELETE.png)
 
 Após criado nosso métodos, nós precisamos importa-lós no nosso arquivo de rotas. Exportando os mesmos do nosso arquivo `product.ts`
 
