@@ -139,8 +139,6 @@ Como no Node nós temo o Express no Deno nós temos o Oak que foi lançado em su
 
 crie o arquivo `server.ts` e importe:  
 
-import `Application` from `[https://deno.land/x/oak/mod.ts](https://deno.land/x/oak/mod.ts)`
-
 ```tsx
 import { Application } from 'https://deno.land/x/oak/mod.ts'
 const port = 8000
@@ -150,7 +148,7 @@ console.log(`Server running on port ${port}`)
 
 > Passo 4: Criando as rotas
 
-Now let’s create the `routes.ts` file and import Router from `[https://deno.land/x/oak/mod.ts.](https://deno.land/x/oak/mod.ts.)` and create routes for our API.
+Agora vamos cruar o arquivo `routes.ts`e and importar: 
 
 ```tsx
 import { Router } from 'https://deno.land/x/oak/mod.ts'
@@ -167,9 +165,9 @@ router.get('/api/v1/products', getProducts)
 export default router
 ```
 
-please don’t get confused by methods of routes. We will create them later in the controller file.
+Não se confundir com os métodos das rotas. Nós vamos cria-los a seguir no nosso controller.
 
-Now, coming back to our `server.ts` file, import the router, and create an application to listen to the PORT. The final version of`server.ts` will look like this.
+Agora, voltando no nosso arquivo `server.ts`, importe nossoa rquivo de rotas, e crie uma isntancia da aplicação que vai ouvir na porta definida. A vesão final do `server.ts` ficará assim:
 
 ```tsx
 import { Application } from 'https://deno.land/x/oak/mod.ts'
@@ -244,7 +242,7 @@ const getProducts = ({ response }: { response: any }) => {
 
 > Testando no Postman
 
-![https://miro.medium.com/max/1070/1*bl49GDWUIsyI9sFDOtJ2TA.png](https://miro.medium.com/max/1070/1*bl49GDWUIsyI9sFDOtJ2TA.png)
+![GETPRODUCTS](/img/APIDENO/GET.png)
 
 **getProduct:** Vai retornar um único produto pelo seu Id e um erro se o produto não for encontrado. Fazendo uma requisição GET para `/api/v1/products/:id`
 
@@ -270,11 +268,11 @@ const getProduct = ({ params, response }: { params: { id: string }, response: an
 
 > Testando no Postman
 
-![https://miro.medium.com/max/1067/1*zW3ssdcdlgrPhGNddRnWMg.png](https://miro.medium.com/max/1067/1*zW3ssdcdlgrPhGNddRnWMg.png)
+![GETONEPRODUCT](/img/APIDENO/GETONE.png)
 
 Produto não encontrado
 
-![https://miro.medium.com/max/1066/1*8tjhwQhjjOIOAiZWjMkn1A.png](https://miro.medium.com/max/1066/1*8tjhwQhjjOIOAiZWjMkn1A.png)
+![GETNOTPRODUCT](/img/APIDENO/GETNOT.png)
 
 Error: Produto não encontrado
 
@@ -305,9 +303,9 @@ const addProduct = async ({ request, response }: { request: any, response: any }
 
 > Testando no Postman
 
-![https://miro.medium.com/max/1069/1*f2EHXfuw1I9Tpt8geOefzA.png](https://miro.medium.com/max/1069/1*f2EHXfuw1I9Tpt8geOefzA.png)
+![POST](/img/APIDENO/POST.png)
 
-![https://miro.medium.com/max/1066/1*FtVCy1T5ZoKHm8OX-bJm_g.png](https://miro.medium.com/max/1066/1*FtVCy1T5ZoKHm8OX-bJm_g.png)
+![POSTRESPONSE](/img/APIDENO/POSTRESPONSE.png)
 
 **updateProduct:** Vai atualizar um produto. Fazendo uma requisição PUT para`/api/v1/products/:id.`
 
