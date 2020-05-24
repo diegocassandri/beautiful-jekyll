@@ -64,7 +64,7 @@ Agora que entendemos um pouco do Deno chegou a hora de colocarmos a mão na mass
 
 ### Instalação
 
-Vou mostrar aqui duas formas de instalação Mac. Linux e Windows. Porém no link a seguir você pode consultor a instalação para outros sistemas operacionais. 
+Vou mostrar aqui duas formas de instalação Mac/Linux e Windows. Porém no link a seguir você pode consultor a instalação para outros sistemas operacionais. 
 
 > [https://deno.land/#installation](https://deno.land/#installation)
 
