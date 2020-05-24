@@ -135,7 +135,7 @@ Se você está usando o Visual Studio Code é recomendado que use o Plugin para 
 
 Como no Node nós temo o Express no Deno nós temos o Oak que foi lançado em sua primeira versão juntamente com o Deno.
 
-> Passo 3: Subindo um servidor Loca.
+> Passo 3: Subindo um servidor Local.
 
 crie o arquivo `server.ts` e importe:  
 
