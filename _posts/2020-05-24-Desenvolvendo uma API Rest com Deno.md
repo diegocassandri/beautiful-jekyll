@@ -8,7 +8,7 @@ bigimg:
 
 # Desenvolvendo uma API Rest com Deno
 
-![API%20REST%20com%20Deno%204d3e5bdb1b304b71af7c1a4a2c590116/Deno.jpeg](/_posts/APIDENO/Deno.jpeg)
+![Deno](/img/Deno.jpeg)
 
 Recentemente o Deno na sua versão 1.0 Beta foi lançado. Mas de fato o que seria o Deno? Ele vai substituir o Node? O que esperar para o futuro?
 
@@ -33,7 +33,7 @@ Essa questão da segurança vem principalmente pela linguagem que o Deno foi con
 - Já possui nativamente os recursos mais recentes do ECMAScript. Algo que no Node existe um tempo maior para liberação desses recursos.
 - É essencialmente um loop for que permite percorrer um array infinito, você podo dizer um array infinito de dados e eventos recebidos.
 
-![API%20REST%20com%20Deno%204d3e5bdb1b304b71af7c1a4a2c590116/1_jQQC7ySp-thNY3cHrSRgYQ.png](/_posts/APIDENO/1_jQQC7ySp-thNY3cHrSRgYQ.png)
+![API%20REST%20com%20Deno%204d3e5bdb1b304b71af7c1a4a2c590116/1_jQQC7ySp-thNY3cHrSRgYQ.png](/img/1_jQQC7ySp-thNY3cHrSRgYQ.png)
 
 - Para maiores informações a respeito do Deno e seus recursos vale dar uma olhadinha no BLOG do projeto.
 
@@ -124,7 +124,7 @@ Se você está usando o Visual Studio Code é recomendado que use o Plugin para 
 
 > Passo 1 : Estrutura do Projeto
 
-![API%20REST%20com%20Deno%204d3e5bdb1b304b71af7c1a4a2c590116/Untitled.png](/_posts/APIDENO/Untitled.png)
+![API%20REST%20com%20Deno%204d3e5bdb1b304b71af7c1a4a2c590116/Untitled.png](/img/Untitled.png)
 
 - **Controllers:** Tem a lógica da aplicação e trabalha com as requisições recebidas.
 - **Routes.ts:** contém as rotas da aplicação.
