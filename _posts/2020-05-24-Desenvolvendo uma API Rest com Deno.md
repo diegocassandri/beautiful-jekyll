@@ -148,7 +148,7 @@ console.log(`Server running on port ${port}`)
 
 > Passo 4: Criando as rotas
 
-Agora vamos cruar o arquivo `routes.ts`e and importar: 
+Agora vamos cruar o arquivo `routes.ts`e importar: 
 
 ```tsx
 import { Router } from 'https://deno.land/x/oak/mod.ts'
