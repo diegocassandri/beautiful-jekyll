@@ -64,7 +64,7 @@ Agora que entendemos um pouco do Deno chegou a hora de colocarmos a mão na mass
 
 ### Instalação
 
-Vou mostrar aqui duas formas de instalação Mac/Linux e Windows. Porém no link a seguir você pode consultor a instalação para outros sistemas operacionais. 
+Vou mostrar aqui duas formas de instalação Mac/Linux e Windows. Porém no link a seguir você pode consultar a instalação para outros sistemas operacionais. 
 
 > [https://deno.land/#installation](https://deno.land/#installation)
 
@@ -91,7 +91,7 @@ typescript 3.9.2
 
 ### Executando uma aplicação Deno
 
-Executando o comando deno run [https://deno.land/std/examples/welcome.ts](https://deno.land/std/examples/welcome.ts). o mesmo será baixado e compilado. Esse exemplo te ajudará a tentar o ambiente do Deno em sua máquina.
+Executando o comando deno run [https://deno.land/std/examples/welcome.ts](https://deno.land/std/examples/welcome.ts). o mesmo será baixado e compilado. Esse exemplo te ajudará a testar o ambiente do Deno em sua máquina.
 
 ```powershell
 deno run https://deno.land/std/examples/welcome.ts
@@ -101,7 +101,7 @@ Compile https://deno.land/std/examples/welcome.ts
 Welcome to Deno 🦕
 ```
 
-Se você executar o comando novamente vai perceber que o código não será baixado novamente, o Deno vai usar o código já baixado da sua área de cache.
+Se você executar o comando novamente vai perceber que o código não será baixado de novo, o Deno vai usar o código já baixado da sua área de cache.
 
 ### Lista de parâmetros de permissão
 
@@ -148,7 +148,7 @@ console.log(`Server running on port ${port}`)
 
 > Passo 4: Criando as rotas
 
-Agora vamos cruar o arquivo `routes.ts`e importar: 
+Agora vamos criar o arquivo `routes.ts`e importar: 
 
 ```tsx
 import { Router } from 'https://deno.land/x/oak/mod.ts'
@@ -167,7 +167,7 @@ export default router
 
 Não se confundir com os métodos das rotas. Nós vamos cria-los a seguir no nosso controller.
 
-Agora, voltando no nosso arquivo `server.ts`, importe nossoa rquivo de rotas, e crie uma isntancia da aplicação que vai ouvir na porta definida. A vesão final do `server.ts` ficará assim:
+Agora, voltando no nosso arquivo `server.ts`, importe nosso arquivo de rotas, e crie uma isntância da aplicação que vai ouvir na porta definida. A vesão final do `server.ts` ficará assim:
 
 ```tsx
 import { Application } from 'https://deno.land/x/oak/mod.ts'
