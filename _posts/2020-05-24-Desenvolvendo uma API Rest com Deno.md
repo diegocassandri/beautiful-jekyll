@@ -20,7 +20,7 @@ Assim você entenderá quais são os objetivos do Deno e se deve utiliza-lo em s
 
 ## O que é o Deno?
 
-Deno é um Reuntime Javascript como o NodeJs e foi criado em conjunto com um dos mesmos criadores do NodeJs **Ryan Daahl**.  O Deno vem então para resolver alguns problemas que o Node possui na visão do próprio Ryan.
+Deno é um Runtime Javascript como o NodeJs e foi criado em conjunto com um dos mesmos criadores do NodeJs **Ryan Daahl**.  O Deno vem então para resolver alguns problemas que o Node possui na visão do próprio Ryan.
 
 O Slogan do Deno é " A secure runtime for javaScript and TypeScript". Dai nós já podemos tirar algumas conclusões de qual é o principal propósito do Deno. Que de fato é ser um ambiente de execução javaScript e TapeScript seguro por padrão.
 
@@ -31,7 +31,7 @@ Essa questão da segurança vem principalmente pela linguagem que o Deno foi con
 - O Deno suporta TypeScript sem a necessidade de transpilação manual. Ou Seja o Deno faz isso de forma automática para gente.
 - Sem node_modules. O Deno não usa o NPM para a instalação de pacotes. Ao invés disso ele importa as bibliotecas de servidores externos diretamente de sua URL. EX:  import {server} from '[https://deno.land/std@0.50.5/http/server.ts](https://deno.land/std@0.50.5/http/server.ts)'
 - Já possui nativamente os recursos mais recentes do ECMAScript. Algo que no Node existe um tempo maior para liberação desses recursos.
-- É essencialmente um loop for que permite percorrer um array infinito, você podo dizer um array infinito de dados e eventos recebidos.
+- É essencialmente um loop for que permite percorrer um array infinito, você pode dizer um array infinito de dados e eventos recebidos.
 
 ![API%20REST%20com%20Deno%204d3e5bdb1b304b71af7c1a4a2c590116/1_jQQC7ySp-thNY3cHrSRgYQ.png](/img/1_jQQC7ySp-thNY3cHrSRgYQ.png)
 
