@@ -23,7 +23,6 @@ description: Blog relacionado a assuntos de tecnologia em geral.
 
 # List of links in the navigation bar
 navbar-links:
-  Portifólio: "portifolio" 
   Sobre: "aboutme"
   
 #Informações:
@@ -38,8 +37,8 @@ navbar-col: "#F5F5F5"
 navbar-text-col: "#404040"
 navbar-border-col: "#EAEAEA"
 page-col: "#FFFFFF"
-link-col: "#008AFF"
-hover-col: "#0085A1"
+link-col: "#0E878D"
+hover-col: "#0E878D"
 footer-col: "#F5F5F5"
 footer-text-col: "#777777"
 footer-link-col: "#404040"
