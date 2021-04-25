@@ -12,15 +12,11 @@ Amante da tecnologia, sempre antenado em novas tendências e novas formas de faz
 
 **Interesses gerais:**
 
-- Desenvovlimento Full Stack
-- Senior X Platform
-- NodeJs
+- Desenvovlimento Full Stack 
+- Clean Architecture 
 - AWS
 - Serverless
-- Java
-- Docker
 - DevOps
-- Desenvolvimento Ágil
 - TDD, BDD
 
 
