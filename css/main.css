@@ -9,7 +9,7 @@ layout: null
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 18px;
-  color: #404040;
+  color: #E7EEFF;
   position: relative;
   background-color: {{ site.page-col }};
   {% if site.page-img %}
@@ -33,7 +33,7 @@ a:focus {
   color: {{ site.hover-col }};
 }
 blockquote {
-  color: #808080;
+  color: #E7EEFF;
   font-style: italic;
 }
 blockquote p:first-child {
@@ -66,22 +66,22 @@ hr.small {
 }
 
 ::-moz-selection {
-  color: black;
+  color:#141517;
   text-shadow: gray;
-  background: /*{{ site.hover-col }}*/ gray;
+  background: /*{{ site.hover-col }}*/ #41444A;
 }
 ::selection {
-  color: black;
+  color:#141517;
   text-shadow: gray;
-  background: /*{{ site.hover-col }}*/ gray;
+  background: /*{{ site.hover-col }}*/#41444A;
 }
 
 img::selection {
-  color: gray;
+  color: #41444A;
   background: transparent;
 }
 img::-moz-selection {
-  color: gray;
+  color: #41444A;
   background: transparent;
 }
 
