@@ -5,7 +5,7 @@
 
 > *Copyright 2018 [Dean Attali](http://deanattali.com)*
 
-**Beautiful Jekyll** is a ready-to-use template to help you create an awesome website quickly. Perfect for personal sites, blogs, or simple project websites.  [Check out a demo](http://deanattali.com/beautiful-jekyll) of what you'll get after just two minutes.  You can also look at [my personal website](http://deanattali.com) to see it in use, or see examples of websites other people created using this theme [here](#showcased-users-success-stories).
+**Beautiful Jekyll** is a ready-to-use template to help you create an awesome website quickly. Perfect for personal sites, blogs, or simple project websites.  [Check out a demo](http://deanattali.com/beautiful-jekyll) of what you'll get after just two minutes.  You can also look at [my personal website](http://deanattali.com) to see it in use, or see examples of websites other people created using this theme [here](README.md#showcased-users-success-stories).
 
 **If you enjoy this theme, please consider [supporting me](https://www.paypal.me/daattali/20) for developing and maintaining this template.**
 
@@ -17,16 +17,16 @@
 
 ### Table of contents
 
-- [Prerequisites](#prerequisites)
-- [Build your website in 3 steps](#build-your-website-in-3-steps)
-- [Add your own content](#add-your-own-content)
-- [Last important thing: YAML front matter ("parameters" for a page)](#last-important-thing-yaml-front-matter-parameters-for-a-page)
-- [Features](#features)
-- [Creating a User Page vs a Project Page](#creating-a-user-page-vs-a-project-page)
-- [Showcased users (success stories!)](#showcased-users-success-stories)
-- [Advanced: local development](#advanced-local-development-using-docker)
-- [FAQ and support](#faq-and-support)
-- [Credits and contributions](#credits)
+- [Prerequisites](README.md#prerequisites)
+- [Build your website in 3 steps](README.md#build-your-website-in-3-steps)
+- [Add your own content](README.md#add-your-own-content)
+- [Last important thing: YAML front matter ("parameters" for a page)](README.md#last-important-thing-yaml-front-matter-parameters-for-a-page)
+- [Features](README.md#features)
+- [Creating a User Page vs a Project Page](README.md#creating-a-user-page-vs-a-project-page)
+- [Showcased users (success stories!)](README.md#showcased-users-success-stories)
+- [Advanced: local development](README.md#advanced-local-development-using-docker)
+- [FAQ and support](README.md#faq-and-support)
+- [Credits and contributions](README.md#credits)
 
 ## Prerequisites
 
@@ -38,7 +38,7 @@
 Getting started is *literally* as easy as 1-2-3 :smile:
 Scroll down to see the steps involved, but here is a 40-second video just as a reference as you work through the steps.
 
-![Installation steps](img/install-steps.gif)
+![Installation steps](install-steps.gif)
 
 ### 1. Fork this repository
 
@@ -62,9 +62,9 @@ You can now visit your shiny new website, which will be seeded with several samp
 
 ## Add your own content
 
-To add pages to your site, you can either write a markdown file (`.md`) or you can write an HTML file directly.  It is much easier to write markdown than HTML, so I suggest you do that (use the [tutorial I mentioned above](http://markdowntutorial.com/) if you need to learn markdown). You can look at some files on this site to get an idea of how to write markdown. To look at existing files, click on any file that ends in `.md`, for example [`aboutme.md`](./aboutme.md). On the next page you can see some nicely formatted text (there is a word in bold, a link, bullet points), and if you click on the pencil icon to edit the file, you will see the markdown that generated the pretty text. Very easy!
+To add pages to your site, you can either write a markdown file (`.md`) or you can write an HTML file directly.  It is much easier to write markdown than HTML, so I suggest you do that (use the [tutorial I mentioned above](http://markdowntutorial.com/) if you need to learn markdown). You can look at some files on this site to get an idea of how to write markdown. To look at existing files, click on any file that ends in `.md`, for example [`aboutme.md`](aboutme.md). On the next page you can see some nicely formatted text (there is a word in bold, a link, bullet points), and if you click on the pencil icon to edit the file, you will see the markdown that generated the pretty text. Very easy!
 
-In contrast, look at [`index.html`](./index.html). That's how your write HTML - not as pretty. So stick with markdown if you don't know HTML.
+In contrast, look at [`index.html`](index.html). That's how your write HTML - not as pretty. So stick with markdown if you don't know HTML.
 
 Any file that you add inside the [`_posts`](./_posts) directory will be treated as a blog entry.  You can look at the existing files there to get an idea of how to write blog posts.  After you successfully add your own post, you can delete the existing files inside [`_posts`](./_posts) to remove the sample posts, as those are just demo posts to help you learn.
 
@@ -88,7 +88,7 @@ subtitle: Here you'll find all the ways to get in touch with me
 ---
 ```
 
-You can look at the top of [`aboutme.md`](./aboutme.md) or [`index.html`](./index.html) as more examples.
+You can look at the top of [`aboutme.md`](aboutme.md) or [`index.html`](index.html) as more examples.
 
 **Important takeaway: ALWAYS add the YAML front matter, which is two lines with three dashes, to EVERY page. If you have any parameters, they go between the two lines.**    
 If you don't include YAML then your file will not use the template.
