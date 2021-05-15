@@ -34,13 +34,13 @@ nav-search: "pesquisa"
 
 
 navbar-col: "#292A2D"
-navbar-text-col: "#404040"
-navbar-border-col: "#EAEAEA"
+navbar-text-col: "#E7EEFF"
+navbar-border-col: "#6E7179"
 page-col: "#202124"
 link-col: "#0E878D"
 hover-col: "#0E878D"
 footer-col: "#292A2D"
-footer-text-col: "#777777"
+footer-text-col: "#6E7179"
 footer-link-col: "#404040"
 
 
