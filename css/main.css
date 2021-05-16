@@ -108,7 +108,7 @@ img {
 
 .navbar-custom {
   background-color: {{ site.navbar-col }};
-  border-bottom: 1px solid #EAEAEA;
+  border-bottom: 1px solid #383942;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   {% if site.navbar-img %}
   background-image: url({{ site.navbar-img }});
@@ -254,7 +254,7 @@ img {
   }
   .navbar-custom .nav .navlinks-container .navlinks-children a {
     padding-left: 10px;
-    border: 1px solid #eaeaea;
+    border: 1px solid #41444A;
     border-width: 0 1px 1px;
   }
 }
@@ -263,7 +263,7 @@ img {
 
 footer {
   padding: 30px 0;
-  border-top: 1px #EAEAEA solid;
+  border-top: 1px #41444A solid;
   margin-top: 50px;
   font-size: 14px;
   background-color: {{ site.footer-col }};
